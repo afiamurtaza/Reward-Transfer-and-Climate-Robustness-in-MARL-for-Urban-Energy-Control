@@ -85,10 +85,10 @@ Full training configuration (learning rate, rollout length, PPO clip range, etc.
 | File | Purpose |
 |------|---------|
 | [`CityLearn_MARL_Setup.ipynb`](CityLearn_MARL_Setup.ipynb) | Sets up the CityLearn 2023 environment, defines observation/action spaces and the IPPO/MAPPO architectures. |
-| [`CityLearn_MARL_IPPO_MAPPO_Baseline.ipynb`](CityLearn_MARL_IPPO_MAPPO_Baseline.ipynb) | Fixed baseline run — validates the corrected IPPO and MAPPO implementations and reward pipeline. |
+| [`CityLearn_MARL_IPPO_MAPPO_Baseline.ipynb`](CityLearn_MARL_IPPO_MAPPO_Baseline.ipynb) | Fixed baseline run - validates the corrected IPPO and MAPPO implementations and reward pipeline. |
 | [`MARL_Energy_Control_Training.ipynb`](MARL_Energy_Control_Training.ipynb) | Full 2 × 3 training matrix (algorithm × reward design); set `SEED` and `RUN_INDEX` to reproduce seeds 42, 2, 7. |
 | [`CityLearn_UAE_Evaluation.ipynb`](CityLearn_UAE_Evaluation.ipynb) | Loads trained checkpoints and runs zero-shot evaluation on the Dubai climate dataset. |
-| [`Single_Seed_Analysis.ipynb`](Single_Seed_Analysis.ipynb) | Per-seed KPI and transfer analysis — produces per-condition figures. |
+| [`Single_Seed_Analysis.ipynb`](Single_Seed_Analysis.ipynb) | Per-seed KPI and transfer analysis - produces per-condition figures. |
 | [`Multi_Seed_Summary.ipynb`](Multi_Seed_Summary.ipynb) | Aggregates across seeds; produces final paper figures, tables, and the RTS analysis. |
 
 ### Data
@@ -107,14 +107,14 @@ Full training configuration (learning rate, rollout length, PPO clip range, etc.
 
 | Path | Purpose |
 |------|---------|
-| [`models/`](models/) | All trained PyTorch checkpoints — 2 algorithms × 3 reward designs × 3 seeds (18 files, 250k steps each). |
+| [`models/`](models/) | All trained PyTorch checkpoints - 2 algorithms × 3 reward designs × 3 seeds (18 files, 250k steps each). |
 
 ### Results
 
 | Path | Purpose |
 |------|---------|
 | [`results_dubai_evaluation/`](results_dubai_evaluation/) | UAE transfer KPIs and reward CSVs from the zero-shot Dubai evaluation, plus US-vs-UAE comparison figures. |
-| [`results_analysis_single_seed/`](results_analysis_single_seed/) | RTS, Pareto-frontier, and seasonal analysis outputs — RQ1–RQ4 figures and tables for the primary seed. |
+| [`results_analysis_single_seed/`](results_analysis_single_seed/) | RTS, Pareto-frontier, and seasonal analysis outputs -> RQ1–RQ4 figures and tables for the primary seed. |
 | [`results_analysis_multiseed/`](results_analysis_multiseed/) | Mean ± std KPI tables and figures aggregated across seeds 42, 2, 7. |
 
 ### Report
